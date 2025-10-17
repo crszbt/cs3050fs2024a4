@@ -10,8 +10,22 @@
 
 // NOTE! - You will want to fill out this data structure.  Do you want a separate
 // NODE data structure as well?
+
+// Node, node I don't
+/*      ________        ________
+       /|||     \      /|||     \
+       \________/      \________/
+    _____________________________
+        \                       /
+         \       ________      /
+          \_____/________\____/
+*/
 typedef struct _BST
 {
+    struct _BST* left;
+    struct _BST* right;
+    void* sat;
+    long long key;
 } BST;
 
 typedef void (*NODEVISITFUNC)(void * parm);
